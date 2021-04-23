@@ -13,6 +13,8 @@ class ADissertationGameMode : public AGameModeBase
 
 public:
 	ADissertationGameMode();
+
+    FString EnumToString(const TCHAR* Enum, int32 EnumValue) const;
 };
 
 

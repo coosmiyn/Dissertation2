@@ -17,3 +17,16 @@ ADissertationGameMode::ADissertationGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+FString ADissertationGameMode::EnumToString(const TCHAR* Enum, int32 EnumValue) const
+{
+	const UEnum* EnumPtr = FindObject<UEnum>(ANY_PACKAGE, Enum, true);
+	if (!EnumPtr)
+		return NSLOCTEXT("Invalid", "Invalid", "Invalid").ToString();
+
+#if WITH_EDITOR
+	return EnumPtr->GetDisplayNameText(EnumValue).ToString();
+#else
+	return EnumPtr->GetEnumName(EnumValue);
+#endif
+}
