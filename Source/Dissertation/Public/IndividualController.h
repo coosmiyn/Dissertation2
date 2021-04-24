@@ -7,6 +7,7 @@
 
 #include "Individual.h"
 #include "Aisle.h"
+#include "Till.h"
 
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
@@ -87,11 +88,23 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
 		FName NextAisleKeyName;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName TillKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName TillClientCapsuleLocation;
+
 	EAisleType GetListItem() const;
 	void SetListItem(EAisleType item);
 
 	AAisle* GetNextAisle() const;
 	void SetNextAisle(AActor* actor);
+
+	ATill* GetTill() const;
+	void SetTill(AActor* actor);
+
+	FVector GetTillClientCapsuleLocation() const;
+	void SetTillClientCapsuleLocation(FVector location);
 
 	FORCEINLINE UBehaviorTreeComponent* GetBehaviourComp() const { return BehaviorComp; }
 

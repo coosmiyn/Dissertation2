@@ -104,3 +104,37 @@ void AIndividualController::SetNextAisle(AActor* actor)
 		BlackboardComp->SetValueAsObject(NextAisleKeyName, actor);
 	}
 }
+
+ATill* AIndividualController::GetTill() const
+{
+	if (BlackboardComp)
+	{
+		return Cast<ATill>(BlackboardComp->GetValueAsObject(TillKeyName));
+	}
+	return nullptr;
+}
+
+void AIndividualController::SetTill(AActor* actor)
+{
+	if (BlackboardComp)
+	{
+		BlackboardComp->SetValueAsObject(TillKeyName, actor);
+	}
+}
+
+FVector AIndividualController::GetTillClientCapsuleLocation() const
+{
+	if (BlackboardComp)
+	{
+		return BlackboardComp->GetValueAsVector(TillClientCapsuleLocation);
+	}
+	return FVector();
+}
+
+void AIndividualController::SetTillClientCapsuleLocation(FVector location)
+{
+	if (BlackboardComp)
+	{
+		BlackboardComp->SetValueAsVector(TillClientCapsuleLocation, location);
+	}
+}
