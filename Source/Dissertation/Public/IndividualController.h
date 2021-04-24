@@ -6,6 +6,7 @@
 #include "AIController.h"
 
 #include "Individual.h"
+#include "Aisle.h"
 
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
@@ -83,8 +84,14 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
 		FName ListItemKeyName;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName NextAisleKeyName;
+
 	EAisleType GetListItem() const;
 	void SetListItem(EAisleType item);
+
+	AAisle* GetNextAisle() const;
+	void SetNextAisle(AActor* actor);
 
 	FORCEINLINE UBehaviorTreeComponent* GetBehaviourComp() const { return BehaviorComp; }
 

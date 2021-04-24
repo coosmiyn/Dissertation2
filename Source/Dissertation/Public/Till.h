@@ -4,6 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+
+#include "Components/CapsuleComponent.h"
+#include "Components/StaticMeshComponent.h"
+
 #include "Till.generated.h"
 
 UCLASS()
@@ -15,6 +19,15 @@ public:
 	// Sets default values for this actor's properties
 	ATill();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool isCashOnly;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool isFree;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool isSelfServe;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -22,5 +35,15 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+private:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+		class UStaticMeshComponent* StaticMesh;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+		class UCapsuleComponent* WorkerCapsule;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+		class UCapsuleComponent* ClientCapsule;
 
 };

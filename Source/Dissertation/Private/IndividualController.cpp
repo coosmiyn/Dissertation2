@@ -87,3 +87,20 @@ void AIndividualController::SetListItem(EAisleType item)
 		BlackboardComp->SetValueAsEnum(ListItemKeyName, static_cast<uint8>(item));
 	}
 }
+
+AAisle* AIndividualController::GetNextAisle() const
+{
+	if (BlackboardComp)
+	{
+		return Cast<AAisle>(BlackboardComp->GetValueAsObject(NextAisleKeyName));
+	}
+	return nullptr;
+}
+
+void AIndividualController::SetNextAisle(AActor* actor)
+{
+	if (BlackboardComp)
+	{
+		BlackboardComp->SetValueAsObject(NextAisleKeyName, actor);
+	}
+}

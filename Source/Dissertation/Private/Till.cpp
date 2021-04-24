@@ -7,7 +7,16 @@
 ATill::ATill()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
+
+	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Static Mesh"));
+	StaticMesh->SetupAttachment(RootComponent);
+
+	WorkerCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Worker Capsule"));
+	WorkerCapsule->SetupAttachment(RootComponent);
+
+	ClientCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Client Capsule"));
+	ClientCapsule->SetupAttachment(RootComponent);
 
 }
 
