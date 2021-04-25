@@ -28,6 +28,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool isSelfServe;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool isOpen;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
