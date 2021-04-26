@@ -19,6 +19,8 @@ ATill::ATill()
 	ClientCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Client Capsule"));
 	ClientCapsule->SetupAttachment(RootComponent);
 
+	hasQueue = false;
+
 }
 
 // Called when the game starts or when spawned

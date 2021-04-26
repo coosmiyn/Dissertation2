@@ -26,7 +26,7 @@ EBTNodeResult::Type UBTTask_FindFreeTill::ExecuteTask(UBehaviorTreeComponent& Ow
 			ATill* Till = Cast<ATill>(tillActor);
 			if (Till)
 			{
-				if (Till->isFree)
+				if (Till->isFree && Till->isOpen)
 				{
 					Controller->SetTill(tillActor);
 					Controller->SetTillClientCapsuleLocation(Till->GetClientTillCapsuleLocation());
