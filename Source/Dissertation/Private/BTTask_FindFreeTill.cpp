@@ -6,6 +6,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "Till.h"
 
+#include "Entrance.h"
+
 #include "Individual.h"
 #include "IndividualController.h"
 
@@ -18,22 +20,47 @@ EBTNodeResult::Type UBTTask_FindFreeTill::ExecuteTask(UBehaviorTreeComponent& Ow
 	{
 		Individual = Cast<AIndividual>(Controller->GetPawn());
 
-		TArray<AActor*> allTillActors;
-		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATill::StaticClass(), allTillActors);
-
-		for (AActor* tillActor : allTillActors)
+		if (!Individual->GetIsInQueue())
 		{
-			ATill* Till = Cast<ATill>(tillActor);
-			if (Till)
-			{
-				if (Till->isFree && Till->isOpen)
-				{
-					Controller->SetTill(tillActor);
-					Controller->SetTillClientCapsuleLocation(Till->GetClientTillCapsuleLocation());
 
-					return EBTNodeResult::Succeeded;
+			TArray<AActor*> allTillActors;
+			UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATill::StaticClass(), allTillActors);
+
+			TArray<AActor*> entranceActors;
+			UGameplayStatics::GetAllActorsOfClass(GetWorld(), AEntrance::StaticClass(), entranceActors);
+
+			AActor* Entrance = entranceActors[0];
+
+			allTillActors.Sort([Entrance](AActor& LHS, AActor& RHS)
+				{
+					float distance1 = FVector::Distance(LHS.GetActorLocation(), Entrance->GetActorLocation());
+					float distance2 = FVector::Distance(RHS.GetActorLocation(), Entrance->GetActorLocation());
+					ATill* till1 = Cast<ATill>(&LHS);
+					ATill* till2 = Cast<ATill>(&RHS);
+					int personsInLine1 = till1->GetNumberOfPersonsInLine();
+					int personsInLine2 = till2->GetNumberOfPersonsInLine();
+					return personsInLine1 < personsInLine2;
+				});
+
+			for (AActor* tillActor : allTillActors)
+			{
+				ATill* Till = Cast<ATill>(tillActor);
+				if (Till)
+				{
+					if (Till->isFree && Till->isOpen)
+					{
+						Controller->SetTill(tillActor);
+						Controller->SetTillClientCapsuleLocation(Till->GetClientTillCapsuleLocation());
+						Individual->SetIsInQueue(true);
+
+						return EBTNodeResult::Succeeded;
+					}
 				}
 			}
+		}
+		else
+		{
+			return EBTNodeResult::Succeeded;
 		}
 	}
 

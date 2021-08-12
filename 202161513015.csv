@@ -1,0 +1,66 @@
+Type,Collisions
+Names,States,Time Spent,Number Of Collisions,List Size
+IndividualBP_C_1,Fast Buy,0:21,0,3
+Duration,3:57
+IndividualBP_C_2,Fast Buy,0:30,5,4
+Duration,3:57
+IndividualBP_C_4,Explore,0:39,12,5
+Duration,3:57
+IndividualBP_C_3,Fast Buy,0:45,11,7
+Duration,3:57
+IndividualBP_C_7,Explore,0:44,11,9
+Duration,3:57
+IndividualBP_C_8,Fast Buy,0:42,14,4
+Duration,3:57
+IndividualBP_C_6,Fast Buy,0:51,10,6
+Duration,3:57
+IndividualBP_C_10,Fast Buy,0:34,4,3
+Duration,3:57
+IndividualBP_C_9,Fast Buy,1:2,7,9
+Duration,3:57
+IndividualBP_C_12,Explore,0:45,6,9
+Duration,3:57
+IndividualBP_C_11,Explore,0:51,8,7
+Duration,3:57
+IndividualBP_C_13,Fast Buy,0:46,9,4
+Duration,3:57
+IndividualBP_C_14,Explore,0:51,15,6
+Duration,3:57
+IndividualBP_C_17,Fast Buy,0:26,4,1
+Duration,3:57
+IndividualBP_C_21,Fast Buy,0:13,0,1
+Duration,3:57
+IndividualBP_C_16,Fast Buy,1:10,13,8
+Duration,3:57
+IndividualBP_C_15,Fast Buy,1:14,31,9
+Duration,3:57
+IndividualBP_C_18,Fast Buy,0:47,8,4
+Duration,3:57
+IndividualBP_C_22,Fast Buy,0:36,6,5
+Duration,3:57
+IndividualBP_C_24,Fast Buy,0:33,6,4
+Duration,3:57
+IndividualBP_C_25,Fast Buy,0:38,5,8
+Duration,3:57
+IndividualBP_C_23,Fast Buy,0:52,17,9
+Duration,3:57
+IndividualBP_C_27,Explore,0:23,7,1
+Duration,3:57
+IndividualBP_C_28,Fast Buy,0:9,2,1
+Duration,3:57
+IndividualBP_C_26,Fast Buy,0:28,30,6
+Duration,3:57
+IndividualBP_C_32,Fast Buy,0:11,3,2
+Duration,3:57
+IndividualBP_C_29,Fast Buy,0:21,9,6
+Duration,3:57
+IndividualBP_C_31,Fast Buy,0:17,7,4
+Duration,3:57
+IndividualBP_C_30,Fast Buy,0:24,12,7
+Duration,3:57
+IndividualBP_C_33,Fast Buy,0:23,16,4
+Duration,3:57
+IndividualBP_C_36,Fast Buy,0:13,2,3
+Duration,3:57
+IndividualBP_C_35,Explore,0:30,9,9
+Duration,3:57

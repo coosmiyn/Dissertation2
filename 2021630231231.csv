@@ -1,0 +1,5 @@
+Type,Collisions
+Names,States,Time Spent,Number Of Collisions,List Size
+IndividualBP_C_6,Fast Buy,0:10,1,1
+IndividualBP_C_0,Explore,0:25,2,8
+Duration,0:29

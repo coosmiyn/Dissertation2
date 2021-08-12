@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 
+#include "Individual.h"
+
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
 
@@ -42,6 +44,19 @@ public:
 	FVector GetClientTillCapsuleLocation() const;
 	FVector GetWorkerTillCapsuleLocation() const;
 
+	bool EnrollInQueue(AIndividual* individual);
+	int EnrollInQueue2(AIndividual* individual);
+	void LeaveQueue(AIndividual* individual);
+
+	bool GetIsFirst(AIndividual* individual);
+
+	FVector GetQueueLocation() const;
+	UCapsuleComponent* GetQueueComponent() const;
+
+	int GetNumberOfPersonsInLine() const { return PersonsInLine.Num(); };
+	
+	float QueueDistance;
+
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class UStaticMeshComponent* StaticMesh;
@@ -53,5 +68,8 @@ private:
 		class UCapsuleComponent* ClientCapsule;
 
 	bool hasQueue;
+
+	AIndividual* FrontOfLine;
+	TArray<AIndividual*> PersonsInLine;
 
 };

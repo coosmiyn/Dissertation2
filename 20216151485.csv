@@ -1,0 +1,83 @@
+Type,Collisions
+Names,States,Time Spent,Number Of Collisions,List Size
+IndividualBP_C_2,Fast Buy,0:16,1,1
+Duration,2:20
+IndividualBP_C_0,Fast Buy,0:33,1,2
+Duration,2:20
+IndividualBP_C_1,Fast Buy,0:40,2,4
+Duration,2:20
+IndividualBP_C_4,Explore,0:18,9,5
+Duration,2:20
+IndividualBP_C_6,Fast Buy,0:18,4,5
+Duration,2:20
+IndividualBP_C_7,Explore,0:19,12,2
+Duration,2:20
+IndividualBP_C_5,Explore,0:24,14,6
+Duration,2:20
+IndividualBP_C_8,Fast Buy,0:19,12,8
+Duration,2:20
+IndividualBP_C_14,Fast Buy,0:9,3,3
+Duration,2:20
+IndividualBP_C_10,Explore,0:20,10,5
+Duration,2:20
+IndividualBP_C_11,Fast Buy,0:20,6,9
+Duration,2:20
+IndividualBP_C_9,Fast Buy,0:23,15,9
+Duration,2:20
+IndividualBP_C_12,Fast Buy,0:15,8,2
+Duration,2:20
+IndividualBP_C_13,Explore,0:16,5,4
+Duration,2:20
+IndividualBP_C_15,Explore,0:18,5,8
+Duration,2:20
+IndividualBP_C_20,Fast Buy,0:11,6,1
+Duration,2:20
+IndividualBP_C_18,Explore,0:15,6,3
+Duration,2:20
+IndividualBP_C_23,Fast Buy,0:13,4,5
+Duration,2:20
+IndividualBP_C_16,Fast Buy,0:23,8,7
+Duration,2:20
+IndividualBP_C_19,Fast Buy,0:20,12,8
+Duration,2:20
+IndividualBP_C_21,Explore,0:19,9,6
+Duration,2:20
+IndividualBP_C_24,Fast Buy,0:16,11,4
+Duration,2:20
+IndividualBP_C_22,Explore,0:22,10,9
+Duration,2:20
+IndividualBP_C_28,Fast Buy,0:13,4,4
+Duration,2:20
+IndividualBP_C_29,Fast Buy,0:14,7,4
+Duration,2:20
+IndividualBP_C_25,Fast Buy,0:22,31,9
+Duration,2:20
+IndividualBP_C_26,Fast Buy,0:25,6,10
+Duration,2:20
+IndividualBP_C_31,Explore,0:19,13,9
+Duration,2:20
+IndividualBP_C_36,Fast Buy,0:7,5,1
+Duration,2:20
+IndividualBP_C_32,Explore,0:26,19,8
+Duration,2:20
+IndividualBP_C_33,Explore,0:23,7,9
+Duration,2:20
+IndividualBP_C_27,Fast Buy,0:35,18,9
+Duration,2:20
+IndividualBP_C_34,Explore,0:21,3,8
+Duration,2:20
+IndividualBP_C_39,Fast Buy,0:11,5,3
+Duration,2:20
+IndividualBP_C_37,Explore,0:15,3,8
+Duration,2:20
+IndividualBP_C_40,Fast Buy,0:7,4,2
+Duration,2:20
+IndividualBP_C_35,Fast Buy,0:23,7,5
+Duration,2:20
+IndividualBP_C_38,Fast Buy,0:17,9,8
+Duration,2:20
+IndividualBP_C_45,Fast Buy,0:9,3,3
+Duration,2:20
+IndividualBP_C_42,Fast Buy,0:15,9,5
+Duration,2:20
+Duration,2:20

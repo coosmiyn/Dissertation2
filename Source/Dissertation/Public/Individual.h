@@ -10,6 +10,9 @@
 #include "Kismet/GameplayStatics.h"
 
 #include "Components/SphereComponent.h"
+#include "Components/CapsuleComponent.h"
+
+#include "BehaviorTree/BlackboardComponent.h"
 
 #include "Individual.generated.h"
 
@@ -25,7 +28,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
 		class UBehaviorTree* BehaviorTree;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TArray<EAisleType> ShoppingList;
+	TArray<AActor*> Individuals;
 
 protected:
 	// Called when the game starts or when spawned
@@ -54,6 +59,39 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int MaxListSize;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		EBuyingState BuyingState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName ShouldDistanceKeyName;
+
+	bool GetShouldDistance() const;
+	void SetShouldDistance(bool value);
+
+	bool GetIsInQueue() const { return isInQueue; };
+	void SetIsInQueue(bool value) { isInQueue = value; };
+
+	FVector InLineLocation() const;
+	UCapsuleComponent* GetQueueComponent() const { return InLineCapsule; }
+	void SetBlackboard(UBlackboardComponent* comp) { BlackboardComp = comp; }
+
+	TArray<AActor*> CheckSurroundings();
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+	FDateTime StartTime;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+		int NumOfCollisions;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+	FDateTime EndTime;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+		FDateTime TimeSpentInside;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+	int ListSize;
+
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class USphereComponent* FrontCollisionCheck;
@@ -61,7 +99,14 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 		class USphereComponent* SurroundingsCollisionCheck;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+		class UCapsuleComponent* InLineCapsule;
+
 
 	void GenerateShoppingList();
+
+	UBlackboardComponent* BlackboardComp;
+
+	bool isInQueue = false;
 
 };

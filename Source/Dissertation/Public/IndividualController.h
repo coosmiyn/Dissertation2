@@ -8,6 +8,8 @@
 #include "Individual.h"
 #include "Aisle.h"
 #include "Till.h"
+#include "Exit.h"
+#include "Components/CapsuleComponent.h"
 
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
@@ -94,6 +96,48 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
 		FName TillClientCapsuleLocation;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName IsFirstKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName IsWaitingInLineKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName QueueLocationKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName QueueComponentKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName ListSizeKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName IsSellingKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName HasFinishedSellingKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName IsShoppingKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName VisitedAislesNumberKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName ItemsBoughtKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName ExitKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName ShouldExitKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName ShouldDistanceKeyName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AI)
+		FName IsLookingForTillKeyName;
+
 	EAisleType GetListItem() const;
 	void SetListItem(EAisleType item);
 
@@ -105,6 +149,48 @@ public:
 
 	FVector GetTillClientCapsuleLocation() const;
 	void SetTillClientCapsuleLocation(FVector location);
+
+	bool GetIsFirst() const;
+	void SetIsFirst(bool value);
+
+	bool GetIsWaitingInLine() const;
+	void SetIsWaitingInLine(bool value);
+
+	FVector GetQueueLocation() const;
+	void SetQueueLocation(FVector location);
+
+	UCapsuleComponent* GetQueueComponent() const;
+	void SetQueueComponent(UCapsuleComponent* component);
+
+	int GetListSize() const;
+	void SetListSize(int value);
+
+	bool GetIsSelling() const;
+	void SetIsSelling(bool value);
+
+	bool GetHasFinishedSelling() const;
+	void SetHasFinishedSelling(bool value);
+
+	bool GetIsShopping() const;
+	void SetIsShopping(bool value);
+
+	int GetVisitedAislesNumber() const;
+	void SetVisitedAislesNumber(int value);
+
+	int GetItemsBought() const;
+	void SetItemsBought(int value);
+	
+	AExit* GetExit() const;
+	void SetExit(AExit* actor);
+
+	bool GetShouldExit() const;
+	void SetShouldExit(bool value);
+
+	bool GetShouldDistance() const;
+	void SetShouldDistance(bool value);
+
+	bool GetIsLookingForTill() const;
+	void SetIsLookingForTill(bool value);
 
 	FORCEINLINE UBehaviorTreeComponent* GetBehaviourComp() const { return BehaviorComp; }
 

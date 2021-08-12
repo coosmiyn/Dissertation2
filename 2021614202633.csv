@@ -1,0 +1,111 @@
+Type,Collisions
+Names,States,Time Spent,Number Of Collisions,List Size
+IndividualBP_C_1,Fast Buy,1:37,5,7
+IndividualBP_C_8,Fast Buy,1:12,8,3
+IndividualBP_C_0,Fast Buy,2:4,13,7
+IndividualBP_C_7,Explore,1:35,6,10
+IndividualBP_C_3,Fast Buy,2:2,10,7
+IndividualBP_C_5,Fast Buy,1:56,13,6
+IndividualBP_C_6,Fast Buy,2:14,8,6
+IndividualBP_C_11,Fast Buy,0:47,3,1
+IndividualBP_C_4,Fast Buy,2:44,15,9
+IndividualBP_C_10,Explore,1:36,8,3
+IndividualBP_C_13,Explore,1:22,4,10
+IndividualBP_C_9,Fast Buy,1:58,12,6
+IndividualBP_C_12,Fast Buy,1:35,272,4
+IndividualBP_C_15,Explore,1:33,13,10
+IndividualBP_C_14,Explore,1:43,10,8
+IndividualBP_C_18,Explore,1:33,11,1
+IndividualBP_C_20,Fast Buy,1:15,10,3
+IndividualBP_C_24,Fast Buy,0:56,2,2
+IndividualBP_C_22,Explore,1:33,165,6
+IndividualBP_C_23,Explore,1:41,11,3
+IndividualBP_C_19,Fast Buy,2:21,19,7
+IndividualBP_C_21,Explore,2:15,15,7
+IndividualBP_C_16,Fast Buy,3:21,16,10
+IndividualBP_C_27,Explore,1:35,11,7
+IndividualBP_C_25,Fast Buy,2:2,17,6
+IndividualBP_C_29,Fast Buy,1:9,9,1
+IndividualBP_C_26,Fast Buy,1:57,16,5
+IndividualBP_C_28,Fast Buy,1:38,12,5
+IndividualBP_C_30,Explore,1:31,5,9
+IndividualBP_C_32,Fast Buy,1:23,11,3
+IndividualBP_C_31,Explore,1:30,5,7
+IndividualBP_C_36,Fast Buy,0:54,3,1
+IndividualBP_C_34,Fast Buy,1:10,37,4
+IndividualBP_C_33,Explore,1:30,5,1
+IndividualBP_C_39,Fast Buy,0:45,2,1
+IndividualBP_C_38,Explore,1:36,8,4
+IndividualBP_C_44,Fast Buy,0:50,4,3
+IndividualBP_C_37,Fast Buy,2:25,11,8
+IndividualBP_C_42,Explore,1:36,7,9
+IndividualBP_C_40,Fast Buy,2:10,15,7
+IndividualBP_C_43,Explore,1:37,10,7
+IndividualBP_C_35,Fast Buy,3:3,26,9
+IndividualBP_C_41,Fast Buy,2:43,17,10
+IndividualBP_C_45,Explore,1:46,13,3
+IndividualBP_C_47,Explore,1:39,6,8
+IndividualBP_C_48,Fast Buy,1:38,12,6
+IndividualBP_C_46,Fast Buy,2:13,14,10
+IndividualBP_C_49,Explore,1:47,12,5
+IndividualBP_C_51,Explore,1:46,12,8
+IndividualBP_C_50,Fast Buy,2:1,10,7
+IndividualBP_C_54,Explore,1:41,12,9
+IndividualBP_C_57,Explore,1:18,5,3
+IndividualBP_C_56,Explore,1:39,11,7
+IndividualBP_C_52,Fast Buy,2:36,16,6
+IndividualBP_C_59,Explore,1:20,6,2
+IndividualBP_C_55,Fast Buy,2:25,13,8
+IndividualBP_C_61,Explore,1:36,14,6
+IndividualBP_C_58,Fast Buy,2:57,18,9
+IndividualBP_C_65,Fast Buy,1:13,13,1
+IndividualBP_C_64,Explore,1:48,16,2
+IndividualBP_C_62,Explore,2:5,17,6
+IndividualBP_C_60,Fast Buy,2:30,12,10
+IndividualBP_C_68,Fast Buy,0:58,3,2
+IndividualBP_C_67,Fast Buy,1:45,8,7
+IndividualBP_C_69,Fast Buy,1:37,10,7
+IndividualBP_C_66,Fast Buy,2:8,17,7
+IndividualBP_C_70,Fast Buy,1:35,6,4
+IndividualBP_C_71,Fast Buy,1:48,2,9
+IndividualBP_C_73,Fast Buy,0:55,4,2
+IndividualBP_C_72,Fast Buy,2:34,13,10
+IndividualBP_C_74,Explore,1:49,10,4
+IndividualBP_C_76,Fast Buy,1:48,11,8
+IndividualBP_C_75,Explore,2:2,16,1
+IndividualBP_C_78,Fast Buy,1:41,8,4
+IndividualBP_C_81,Fast Buy,1:23,9,4
+IndividualBP_C_80,Fast Buy,1:40,11,7
+IndividualBP_C_82,Fast Buy,1:27,7,4
+IndividualBP_C_79,Fast Buy,2:59,11,10
+IndividualBP_C_85,Explore,1:35,11,2
+IndividualBP_C_86,Explore,1:50,13,5
+IndividualBP_C_84,Fast Buy,2:22,15,9
+IndividualBP_C_87,Explore,1:33,6,3
+IndividualBP_C_88,Fast Buy,1:26,6,3
+IndividualBP_C_89,Explore,1:17,4,7
+IndividualBP_C_91,Explore,1:26,6,8
+IndividualBP_C_90,Fast Buy,2:7,14,7
+IndividualBP_C_92,Fast Buy,1:24,7,3
+IndividualBP_C_93,Fast Buy,1:33,8,5
+IndividualBP_C_95,Fast Buy,1:11,5,3
+IndividualBP_C_96,Explore,1:23,6,2
+IndividualBP_C_97,Explore,1:41,8,9
+IndividualBP_C_98,Fast Buy,2:24,13,7
+IndividualBP_C_100,Explore,1:34,7,8
+IndividualBP_C_99,Fast Buy,2:9,15,10
+IndividualBP_C_101,Explore,1:33,11,2
+IndividualBP_C_103,Fast Buy,1:40,8,5
+IndividualBP_C_102,Fast Buy,2:3,16,8
+IndividualBP_C_104,Fast Buy,0:53,2,2
+IndividualBP_C_105,Fast Buy,1:23,8,5
+IndividualBP_C_107,Fast Buy,1:0,3,3
+IndividualBP_C_108,Explore,1:38,6,7
+IndividualBP_C_106,Fast Buy,2:56,19,8
+IndividualBP_C_109,Explore,1:55,12,7
+IndividualBP_C_110,Fast Buy,2:26,15,8
+IndividualBP_C_111,Fast Buy,2:22,17,9
+IndividualBP_C_113,Fast Buy,1:27,5,4
+IndividualBP_C_114,Explore,1:28,7,2
+IndividualBP_C_116,Fast Buy,2:18,9,8
+IndividualBP_C_117,Fast Buy,2:14,10,7

@@ -18,3 +18,12 @@ enum class EAisleType : uint8
 
 	MAX = 4			UMETA(Hidden)
 };
+
+UENUM()
+enum class EBuyingState : uint8
+{
+	FastBuy = 0,
+	Explore = 1,
+
+	MAX = 2			UMETA(Hidden)
+};
